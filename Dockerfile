@@ -8,7 +8,7 @@ WORKDIR /var/working
 # DynamoDB defualt port
 EXPOSE 8000
 
-# Get files form Amazon
+# Get files from Amazon
 RUN wget -O /tmp/dynamodb_local_latest https://s3-us-west-2.amazonaws.com/dynamodb-local/dynamodb_local_latest.tar.gz
 RUN tar xfz /tmp/dynamodb_local_latest
 RUN rm -f /tmp/dynamodb_local_latest
